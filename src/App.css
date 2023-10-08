@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+.App{
+  background-color: rgb(31, 31, 31);
+  height: 100vh;
+  padding: 40px;
+  
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* ==== Home Page ==== */
+.home {
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #e8e8e8f7;
+  flex-wrap: wrap;
+}
+p {
+  font-size: 14rem;
+  text-transform: uppercase;
+  text-align: left;
+}
+.bot {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+p.lastname {
+  font-weight: 700;
+  font-family: var(--oswald);
+  margin-right: 40px;
+}
+p.firstname {
+  font-family: var(--raleway);
+  font-weight: 100;
+}
+p.view-more {
+  font-family: var(--oswald);
+  display: flex;
+  font-size: 30px;
+  letter-spacing: 4px;
+  height: 80px;
+  align-items: center;
+}
+.view-more-arrow {
+  display: flex;
+  align-self: center;
+  margin-left: 40px;
+  cursor: pointer;
+  transition: transform 0.5s;
+  color: #e8e8e8f7;
+}
+.view-more-arrow:hover {
+  transform: scale(1.3);
 }
 
-.App-link {
-  color: #61dafb;
+/* ==== About Page ==== */
+.about {
+  display: flex;
+  flex-direction: column;
+  color: #e8e8e8f7;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1.about-title{
+  font-size: 18em;
+  font-family: var(--oswald);
+}
+.about-me h3{
+  font-size: 4em;
+  font-family: var(--raleway);
+  font-weight: 100;
+  margin: 40px 0;
+}
+.about-me p {
+  font-size: 2em;
+  font-family: var(--overpass);
+  font-weight: 200;
 }
