@@ -1,6 +1,6 @@
 .App{
   background-color: rgb(31, 31, 31);
-  height: 100vh;
+  height: 100%;
   padding: 40px;
   
 }
@@ -63,6 +63,9 @@ h1.about-title{
   font-size: 18em;
   font-family: var(--oswald);
 }
+.about-me {
+  padding: 80px;
+}
 .about-me h3{
   font-size: 4em;
   font-family: var(--raleway);
@@ -73,4 +76,48 @@ h1.about-title{
   font-size: 2em;
   font-family: var(--overpass);
   font-weight: 200;
+  text-transform: none;
+}
+.about-me a{
+  display: flex;
+  justify-content: flex-end;
+  font-size: 10em;
+  color: #e8e8e8f7;
+  font-family: var(--raleway);
+  font-weight: 100;
+  transition: all 0.7s;
+  margin-top: 2em;
+}
+.about-me a:hover{
+  color: #e8e8e85e;
+}
+
+
+/* ==== Project Page ==== */ 
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.project-items{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 60px;
+}
+.project-items img{
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+  filter: grayscale(100);
+}
+.project-items p {
+  font-family: var(--raleway);
+  font-size: 5em;
+  font-weight: 100;
+  color: #fff;
+  text-transform: none;
+  margin-bottom: 20px;
 }
