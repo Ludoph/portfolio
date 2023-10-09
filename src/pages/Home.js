@@ -33,7 +33,10 @@ function Home() {
         >
           Ludovic
         </p>
-        <p className="view-more" data-aos="fade-left" data-aos-duration="4000">
+        <p className="view-more" data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="300"
+          data-aos-offset="0">
           {sentence.map((letter, index) => {
             return <TextSpan>{letter}</TextSpan>;
           })}

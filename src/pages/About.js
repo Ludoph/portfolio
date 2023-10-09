@@ -9,8 +9,6 @@ function About() {
     Aos.init({ duration: 3000 });
   }, []);
 
-
-
   return (
     <div className="about">
       <h1
@@ -31,7 +29,15 @@ function About() {
           your knowledge to contribute to the development of innovative
           projects.
         </p>
-        <Link to="/project">My Work</Link>
+        <Link
+          to="/project"
+          data-aos="fade-zoom-in"
+     data-aos-easing="ease-in-back"
+     data-aos-delay="300"
+     data-aos-offset="0"
+        >
+          My Work
+        </Link>
       </div>
     </div>
   );

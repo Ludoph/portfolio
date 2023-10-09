@@ -13,7 +13,7 @@ export default function Project() {
   }, []);
 
   return (
-    <div className="project" data-aos="fade-in" data-aos-easing="ease-in-sine">
+    <div className="project" data-aos="fade-out" data-aos-easing="ease-in-sine">
       <div className="project-items">
         <p># D.Hub</p>
         <img src={img1} alt="d.hub" />

@@ -20,7 +20,7 @@
   --raleway: 'Raleway', sans-serif;
 
   background-color: rgb(31, 31, 31);
-
+  scroll-behavior: smooth;
 }
 
 
