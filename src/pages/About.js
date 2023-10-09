@@ -2,11 +2,13 @@ import React from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function About() {
   useEffect(() => {
     Aos.init({ duration: 3000 });
   }, []);
+
   return (
     <div className="about">
       <h1
@@ -17,18 +19,9 @@ function About() {
       >
         about me
       </h1>
-      <div
-        className="about-me"
-        
-      >
-        <h3
-          data-aos="fade-down"
-        >
-          Hi, I'm Fullstack Developer
-        </h3>
-        <p
-          data-aos="fade-up"
-        >
+      <div className="about-me">
+        <h3 data-aos="fade-down">Hi, I'm Fullstack Developer</h3>
+        <p data-aos="fade-up">
           A passionate developer and apprentice who is enthusiastic about
           learning and practicing new things. Your curiosity drives you to
           explore and discover new ideas, and you are always looking for ways to
@@ -36,6 +29,15 @@ function About() {
           your knowledge to contribute to the development of innovative
           projects.
         </p>
+        <Link
+          to="/project"
+          data-aos="fade-zoom-in"
+     data-aos-easing="ease-in-back"
+     data-aos-delay="300"
+     data-aos-offset="0"
+        >
+          My Work
+        </Link>
       </div>
     </div>
   );
